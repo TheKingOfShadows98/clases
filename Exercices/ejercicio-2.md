@@ -16,3 +16,5 @@
  - Modifica el Withdraw para que al requerir un  numerico, devuelva en caso a la cantidad de billetes que tenga. 
  - Ahora el ATM empieza con 10 billetes de cada denominacion.
 
+
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**

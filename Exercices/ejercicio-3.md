@@ -50,3 +50,6 @@ Hay Codigo ya realizado por un compañero tuyo que te puede ayudar a continuar:
 Para que la prueba se considere completa se deben corer los test correspondientes y salir todos correctos.
 
 Desafio Extra: Calcula el estado final de DB en base a los logs generados con una funcion.
+
+
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**

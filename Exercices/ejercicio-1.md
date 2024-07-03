@@ -18,7 +18,9 @@ const myFunction = (params)=>{
     //do something
 }
 
-function myFunction = (params)=>{
+function myFunction (params)=>{
     // do something
 }
 ```
+
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**
