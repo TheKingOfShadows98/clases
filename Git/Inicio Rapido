@@ -5,6 +5,10 @@
     - [Iniciarlizar un Repositorio](#iniciarlizar-un-repositorio)
     - [Cambios y Registros](#cambios-y-registros)
     - [Ramas del Repositorio.](#ramas-del-repositorio)
+    - [Remoto, subir y bajar cambios](#remoto-subir-y-bajar-cambios)
+      - [Pull](#pull)
+      - [Push](#push)
+      - [Que es Origin?](#que-es-origin)
 
 # G.U.I.A
 
@@ -85,3 +89,20 @@
     *Esto no elimina la rama con la que se uno, solo fusiona los cambios de la otra rama a la rama actual.*
 
 [- Volver al Inicio](#tabla-de-contenido)
+
+### Remoto, subir y bajar cambios
+#### Pull
+- git pull: Trae los cambios de una rama en remoto a la rama actual.
+
+```bash
+ git pull origin main #trae a la rama actual, los cambios de la direccion origin, de la rama main.
+```
+#### Push
+- git push: empuja o sube los cambios de la rama actual a una rama en remoto.
+  
+```bash
+ git push origin main #Sube los cambios de  la rama actual a la direccion origin en la rama main.
+```
+#### Que es Origin?
+ Origin es el valor por defecto en donde se guarda la direccion de origen del repositorio al momento de clonarlo.
+ cuando se trabaja con GitHub es usual crear el repositorio desde Github y posteriormente clonarlo al local. lo cual deja esta direccion origin como direccion del repositorio Remoto.
