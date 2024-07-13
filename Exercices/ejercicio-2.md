@@ -58,10 +58,16 @@ Eso permite a los usuarios depositar en los billetes que desen.
 Tambien al momento de Retirar los billetes queremos que el cajero pueda sacar la cantidad de dinero pero en billetes.
 
 ```js
+const _balance = {
+   'dolar':10, 
+   'cinco':10, 
+   'diez':10, 
+   'veinte':10
+   };
 
-WithDraw(25) //esto debe retornar un objeto con los billetes que sumen la cantidad
+WithDraw(99) //esto debe retornar un objeto con los billetes que sumen la cantidad
 
-//Resultado
+//WithDraw(25) retorna:
 {
    'dolar':0, 
    'cinco':1, 
@@ -69,6 +75,13 @@ WithDraw(25) //esto debe retornar un objeto con los billetes que sumen la cantid
    'veinte':1
 }
 
+//Balance queda de la siguiente forma
+{
+   'dolar':10, 
+   'cinco':9, 
+   'diez':10, 
+   'veinte':9
+};
 ```
 al momento de Retirar procura entregar la mayor cantidad de billetes de mayor denominacion posibles sin pasarte de la cantidad requerida.
 en caso que el ATM no tenga la cantidad suficiente para realizar el retiro debe lanzar un log de error y retornar 0 billetes.

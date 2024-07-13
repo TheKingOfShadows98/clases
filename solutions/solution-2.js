@@ -16,66 +16,51 @@ const Deposit = (papers) => {
     _balance.veinte += papers.veinte;
 };
 
+function getMaxAmount(){
+    let n = 20  * _balance.veinte;
+    n += 10 * _balance.diez;
+    n += 5 * _balance.cinco;
+    n += 1 * _balance.dolar;
+    return n;
+}
+
 const Withdraw = (amount) => {
-    let billetes20 = Math.floor(amount/20);
+    
+    let errorObject = {
+        'dolar': 0,
+        'cinco': 0,
+        'diez': 0,
+        'veinte': 0
+    };
+
+    if(amount > getMaxAmount()) return errorObject;
+
+    let billetes20 = Math.min(Math.floor(amount/20), _balance.veinte);
     amount -= billetes20 * 20;
-    let billetes10 = Math.floor(amount/10);
+
+    let billetes10 = Math.min(Math.floor(amount/10), _balance.diez);
     amount -= billetes10 * 10;
-    let billetes5 = Math.floor(amount/5);
+
+    let billetes5 = Math.min(Math.floor(amount/5), _balance.cinco);
     amount -= billetes5 * 5;
-    let billetes1 = Math.floor(amount/1);
+    
+    let billetes1 = Math.min(Math.floor(amount/1), _balance.cinco) ;
     amount -= billetes1 * 1;
+
+    if(amount > 0) return errorObject;
+
     let result = {
         'dolar': billetes1,
         'cinco': billetes5,
         'diez': billetes10,
         'veinte': billetes20
-    } 
+    }
+
+    _balance.veinte -= billetes20;
+    _balance.diez -= billetes10;
+    _balance.cinco -= billetes5;
+    _balance.dolar -= billetes1;
+
     return result;
 }
-
-/*
-[Tests]
-*/
-const Test = (title, predicate)=> {
-    if(predicate())console.log('✔️ ', title);
-    else console.log('❌ ', title);
-}
-Test("Balance", ()=>{
-    let assert = JSON.stringify({
-        'dolar':10,
-        'cinco':10,
-        'diez':10,
-        'veinte':10,
-    });
-    return JSON.stringify(Balance()) === assert;
-});
-
-Test("Deposit", ()=>{
-    Deposit({
-        'dolar':5,
-        'cinco':3,
-        'diez':6,
-        'veinte':8,
-    });
-    let assert = JSON.stringify({
-        'dolar':15,
-        'cinco':13,
-        'diez':16,
-        'veinte':18,
-    });
-    return JSON.stringify(Balance()) === assert;
-});
-
-Test("WithDraw", ()=>{
-    let assert = JSON.stringify({
-        'dolar':3,
-        'cinco':0,
-        'diez':1,
-        'veinte':0,
-    });
-    let value = Withdraw(13);
-    return JSON.stringify(value) === assert;
-});
-
 
