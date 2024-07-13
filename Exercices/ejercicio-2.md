@@ -1,5 +1,11 @@
+# ATM PARTE 2
+
+| *DIFICULTAD DIFICIL*
 
  Segunda parte Adision de Billetes
+
+
+[Sino conoces Objetos o es la primera vez que trabajas con eso en JS, puedes ver mas aquí.]()
 
  Tu PM ve bien los avances, pero ha surgido un problema y es que los usuarios quieren pagar con billetes de distintos tipos.
  Especificamente ahora quieren pagar con billetes de Uno, Cinco, Diez y Veinte dolares.
@@ -15,16 +21,39 @@ const _balance = {
    };
 ```
 
-Adicionalmente tambien indica que tienes que cambiar la funcion de Deposit para que acepte los billetes nuevos de la siguiente forma:
+Ademas debes hacer que la funcion Deposit pida por parametro un objeto que contenga la cantida de billetes depositados de cada denominacion y adicione esa cantidad a _balance.
 
 ```js
- Deposit({
+const _balance = {
+   'dolar':10, 
+   'cinco':10, 
+   'diez':10, 
+   'veinte':10
+   };
+
+const billetes_a_ingresar =
+{
    'dolar':1, 
    'cinco':3, 
    'diez':2, 
    'veinte':1
-   });
+}
+
+Deposit(billetes_a_ingresar);
+
 ```
+Recuerda que para modificar un valor dentro de un objeto se puede hacer asi:
+```js
+const _balance = {
+   'dolar':10, 
+   'cinco':10, 
+   'diez':10, 
+   'veinte':10
+   };
+
+_balance.dolar += 1; // Suma 1 a la propiedad 'dolar' de _balance
+```
+
 Eso permite a los usuarios depositar en los billetes que desen.
 Tambien al momento de Retirar los billetes queremos que el cajero pueda sacar la cantidad de dinero pero en billetes.
 
@@ -51,4 +80,4 @@ Tambien se ha repuesto el ATM con 10 billetes de cada denominacion para las prue
 
 
 
-### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS MUESTRAN UN ✔ EN CONSOLA, HAZ PASADO LA PRUEBA**

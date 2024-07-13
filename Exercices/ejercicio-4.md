@@ -1,5 +1,9 @@
 # Listas!
 
+| *DIFICULTAD ['D','I','F','I','C','I','L']*
+
+
+
 Te gustan las listas?, espero que si, porque este ejercicio sera un entrenamiento de operar con listas y ordenamiento.
 
 Empecemos con lo primero, tendras una lista de enteros del 1 al 10 ordenados de menor a mayor.
@@ -15,7 +19,7 @@ const lista = [1,2,3,4,5,6,7,8,9,10];
 Move(3) // Retorna [8,9,10,1,2,3,4,5,6,7];
 Move(-2) // Retorna [10,1,2,3,4,5,6,7,8,9];
 ```
-Las pruebas tendran numeros aleatoreos entre -20 y 20, siempre enteros.
+*Las pruebas tendran numeros aleatoreos entre -20 y 20, siempre enteros.*
 
 Ya teniendo el movimiento completo de la lista que pasa si lo desordenamos?
 Haz una funcion llamada MoveAt() que pida dos valores entre 0 y 9, estos valores son 2 posiciones del arreglo. haz que cambie los numeros que son indicados.
@@ -42,4 +46,4 @@ Sort() // Retorna [1,2,3,4,5,6,7,8,9,10] Ordena los numeros de menor a mayor
 Si logras hacer estos ejercicos estas ya no eres un novato en listas y puedes ejecutar funciones complejas.
 Felicidades y Mucha suerte con el ejercicio.
 
-### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS MUESTRAN UN ✔ EN CONSOLA, HAZ PASADO LA PRUEBA**

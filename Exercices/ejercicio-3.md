@@ -1,5 +1,7 @@
 # REGISTRO DE TRANSFERENCIAS
 
+| *DIFICULTAD MEDIA*
+
 Tu PM te indica que se necesitan guardar las transferencias y retiros de cada transaccion.
 para eso necesitaras hacer un log que almacene, la cantidad de la transferencia, si es un retiro o si se transfiere a otra cuenta.
 
@@ -52,4 +54,4 @@ Para que la prueba se considere completa se deben corer los test correspondiente
 Desafio Extra: Calcula el estado final de DB en base a los logs generados con una funcion.
 
 
-### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS MUESTRAN UN ✔ EN CONSOLA, HAZ PASADO LA PRUEBA**

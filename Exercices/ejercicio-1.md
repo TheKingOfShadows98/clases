@@ -1,6 +1,8 @@
- Te han contratado para programar el software para el funcionamiento de un ATM, para esto tu PM ha decidido separar el software en partes.
+# ATM PARTE 1
 
- Primera parte.
+| *DIFICULTAD MEDIA*
+
+Te han contratado para programar el software para el funcionamiento de un ATM, para esto tu PM ha decidido separar el software en partes.
 
 Necesitamos que el ATM guarde la informacion de cuanto dinero contiene dentro, crea una variable que almacene el dinero que tiene expresado en dolares enteros.
 
@@ -23,4 +25,4 @@ function myFunction (params)=>{
 }
 ```
 
-### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS SALEN CORRECTOS, HAZ PASADO LA PRUEBA**
+### **PARA COMPROBAR SI LA SOLUCION ES CORRECTA, COPIA LOS TESTS DEL EJERCICIO Y EJECUTA EL SCRIPT, SI TODOS MUESTRAN UN ✔ EN CONSOLA, HAZ PASADO LA PRUEBA**
