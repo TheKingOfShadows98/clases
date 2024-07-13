@@ -1,6 +1,6 @@
 # ATM PARTE 2
 
-| *DIFICULTAD DIFICIL*
+| *DIFICULTAD: Mono Blanco de Sekiro en NO-HIT NO-Glitch 100%*
 
  Segunda parte Adision de Billetes
 
