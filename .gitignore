@@ -1,0 +1,14 @@
+# C# 
+
+
+CSharp/*/[Dd]ebug/
+CSharp/*/[Rr]elease/
+CSharp/*/x64/
+CSharp/*/[Bb]in/
+CSharp/*/[Oo]bj/
+# NuGet Packages
+CSharp/*.nupkg
+# The packages folder can be ignored because of Package Restore
+CSharp/**/packages/*
+# except build/, which is used as an MSBuild target.
+!CSharp/**/packages/build/
