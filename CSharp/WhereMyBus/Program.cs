@@ -1,4 +1,9 @@
-﻿using WhereBus;
+﻿using Tests.Arbol;
 
-MainApp myApp = new MainApp();// Construimos la applicacion
+App.Start();
+
+/*
+using WhereBus;
+MainAppTree myApp = new MainAppTree();// Construimos la applicacion
 myApp.Start(); // Iniciamos la Applicacion
+*/
