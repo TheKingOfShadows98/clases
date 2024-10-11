@@ -1,7 +1,7 @@
-﻿using Tests.Arbol;
+﻿using WhereBus;
 
-App.Start();
-
+PruebaCreacionDeArbol app = new();
+app.Start();
 /*
 using WhereBus;
 MainAppTree myApp = new MainAppTree();// Construimos la applicacion

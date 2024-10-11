@@ -2,11 +2,7 @@ using System.Linq;
 
 namespace WhereBus
 {
-   
-
-    
-
-    public class LineaBus : IElementoRuta{
+       public class LineaBus : IElementoRuta{
         public string Nombre { get; set;} 
         public Paradero[] Paraderos {get; set;}
 
@@ -14,7 +10,7 @@ namespace WhereBus
             Nombre = nombre;
             Paraderos = paraderos;
         }
-        public string GetNombre() => $"[L]{Nombre}";
+        public string GetNombre() => $"[R]{Nombre}";
         public string Descripcion(){
             string msg = $"Ruta: {Nombre} \n Paraderos: ";
             foreach (Paradero paradero in Paraderos)

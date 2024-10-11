@@ -1,17 +1,18 @@
 using System.Collections.Generic;
+using WhereBus;
 namespace Tests.Arbol{
     public class Node{
 
-        public string Data {get; private set;}// Informacion guardada en el NODO.
+        public IElementoRuta Data {get; private set;}// Informacion guardada en el NODO.
         public Node Parent{ get; private set;}// Nodo padre del Nodo.
         public List<Node> Childs { get; private set;}// Hijos de este Nodo.
 
-        public Node(string data){
+        public Node(IElementoRuta data){
             Data = data;// Asignamos la Informacion al nodo.
             Childs = new(); // Inicializamos la lista de Hijos.
         }
 
-        public Node(string data, Node parent){
+        public Node(IElementoRuta data, Node parent){
             Data = data;// Asignamos la Informacion al nodo.
             Parent = parent; // Asigamos el padre si lo hay.
             Childs = new(); // Inicializamos la lista de Hijos.
@@ -27,7 +28,7 @@ namespace Tests.Arbol{
             if(Parent != null){
                 result += $"{Parent.GetTree()} > ";
             }
-            result += Data;
+            result += Data.GetNombre();
             return result;
         }
     }
